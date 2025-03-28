@@ -6,7 +6,7 @@ A sleek, responsive markdown editor and previewer that looks and feels just like
 
 ## 🔗 Live Demo
 
-[View Live Demo](https://github-markdown-previewer.example.com)
+[View Live Demo](https://learn.dipanshu.dev/github-markdown-previewer/)
 
 ## ✨ Features
 
@@ -40,7 +40,6 @@ Your markdown content is automatically saved to your browser's local storage. If
 
 Switch between light and dark themes to match your preference or reduce eye strain.
 
-![Dark Mode](https://via.placeholder.com/400x250?text=Dark+Mode) ![Light Mode](https://via.placeholder.com/400x250?text=Light+Mode)
 
 ## 📦 Technology Stack
 
