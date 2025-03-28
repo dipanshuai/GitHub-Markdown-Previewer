@@ -9,26 +9,41 @@
 <body class="dark-mode">
     <div class="wrapper">
         <header>
-            <p>Markdown Previwer <br> Just Like GitHub</p>
-            <button>Change Theme</button>
+            <p>Markdown Previewer <br> Just Like GitHub</p>
+            <div class="button-group">
+                <button id="copyBtn" title="Copy Markdown">Copy</button>
+                <button id="clearBtn" title="Clear Markdown">Clear</button>
+                <button id="themeBtn">Change Theme</button>
+            </div>
         </header>
     
         <main>
             <div id="inputContainer">
-                <textarea name="inputfield" id="input"></textarea></div>
+                <div class="formatting-toolbar">
+                    <button title="Heading 1" class="format-btn" data-format="h1">H1</button>
+                    <button title="Heading 2" class="format-btn" data-format="h2">H2</button>
+                    <button title="Heading 3" class="format-btn" data-format="h3">H3</button>
+                    <span class="toolbar-divider"></span>
+                    <button title="Bold" class="format-btn" data-format="bold"><strong>B</strong></button>
+                    <button title="Italic" class="format-btn" data-format="italic"><em>I</em></button>
+                    <button title="Strikethrough" class="format-btn" data-format="strike"><s>S</s></button>
+                    <span class="toolbar-divider"></span>
+                    <button title="Bulleted List" class="format-btn" data-format="ul">• List</button>
+                    <button title="Numbered List" class="format-btn" data-format="ol">1. List</button>
+                    <button title="Task List" class="format-btn" data-format="task">☑ Task</button>
+                    <span class="toolbar-divider"></span>
+                    <button title="Link" class="format-btn" data-format="link">🔗</button>
+                    <button title="Image" class="format-btn" data-format="image">🖼️</button>
+                    <button title="Code" class="format-btn" data-format="code">{}</button>
+                    <button title="Blockquote" class="format-btn" data-format="quote">❝</button>
+                    <button title="Horizontal Rule" class="format-btn" data-format="hr">―</button>
+                </div>
+                <textarea name="inputfield" id="input"></textarea>
+            </div>
     
             <div id="previewContainer" class="markdown-body"></div>
         </main>
     </div>
-
-
-
-
-
-
-
-
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
